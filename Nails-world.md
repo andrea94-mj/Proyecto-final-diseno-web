@@ -1,2 +1,2 @@
-# Proyecto-final-dise-o-web
+# Proyecto-final-diseño-web
 Nails-world
