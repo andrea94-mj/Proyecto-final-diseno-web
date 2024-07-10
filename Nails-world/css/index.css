@@ -90,6 +90,38 @@
         transform: scale(1.1);
     }
 
+    /* FOOTER COMÚN PARA TODAS LAS SECCIONES */
+
+    .Footer{
+        width: 100%;
+        background-color: var(--color-gris);
+        margin: 3rem auto 0;
+        padding: 2.5rem;
+    }
+
+    .Footer-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .Footer-li{
+        width: 1.6rem;
+        cursor: pointer;
+    }
+    
+    .Footer-li:hover{
+        opacity: 50%;
+    }
+    .Footer-copyright{
+        font-family: var(--font-subtitulos);
+        text-align: center;
+        font-size: 1.2em;
+        margin: 2rem 0 0 0;
+    }
+
     /* FORMAS */
 
     /* Encabezado formas */
@@ -149,7 +181,7 @@
         gap: 2.5rem;
     }
     .Section-h2--formas{
-        font-size: 48px;
+        font-size: 3em;
         font-family: var(--font-textos);
         color: var(--color-gris);
         text-align: center;
@@ -163,11 +195,10 @@
         text-align: justify;
     }
 
-    /* Contenido / article - formas */
+    /* Contenido - formas */
 
     .Article-formas{
         width: 90%;
-        /* background-color: bisque; */
         margin: 0 auto;
     }
     
@@ -196,6 +227,33 @@
         line-height: 1.5625rem;
     }
 
+    /* Section - formas */
+
+    .Section-tecnicas{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        gap: 2.5rem;
+    }
+    .Section-h2--tecnicas{
+        font-size: 2em;
+        font-family: var(--font-textos);
+        color: var(--color-gris);
+        text-align: center;
+    }
+    .Section-p--tecnicas{
+        width: 90%;
+        background-color: var(--color-principal-azul);
+        font-family: var(--font-textos);
+        padding: 2rem 3rem;
+        line-height: 1.875rem;
+        text-align: justify;
+    }
+
 
 
     /* TÉCNICAS */
@@ -221,6 +279,29 @@
         font-size: 11em;
     }
 
+    /* Menú técnicas */
+
+    .Header-ul--tecnicas{
+        width: 60%;
+        margin: 2rem auto;
+
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Header-li--tecnicas{
+        font-family: var(--font-subtitulos);
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: .0625rem;
+        cursor: pointer;
+    }
+    .Header-li--tecnicas:hover{
+        color: var(--color-principal-azul) ;
+        transform: scale(1.1);
+    }
+
     /* EFECTOS */
 
     /* Encabezado efectos */
@@ -243,3 +324,9 @@
         text-shadow: var(--color-gris);
         font-size: 11em;
     }
+
+    /* KEY FRAMES */
+    
+
+
+
