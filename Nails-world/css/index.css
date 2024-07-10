@@ -227,32 +227,8 @@
         line-height: 1.5625rem;
     }
 
-    /* Section - formas */
 
-    .Section-tecnicas{
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        padding: 4rem;
-        gap: 2.5rem;
-    }
-    .Section-h2--tecnicas{
-        font-size: 2em;
-        font-family: var(--font-textos);
-        color: var(--color-gris);
-        text-align: center;
-    }
-    .Section-p--tecnicas{
-        width: 90%;
-        background-color: var(--color-principal-azul);
-        font-family: var(--font-textos);
-        padding: 2rem 3rem;
-        line-height: 1.875rem;
-        text-align: justify;
-    }
+
 
 
 
@@ -300,6 +276,49 @@
     .Header-li--tecnicas:hover{
         color: var(--color-principal-azul) ;
         transform: scale(1.1);
+    }
+
+    /* Section - tecnicas */
+    .Section-tecnicas{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 4rem;
+        gap: 2.5rem;
+    }
+    .Section-h2--tecnicas{
+        font-size: 2em;
+        font-family: var(--font-textos);
+        color: var(--color-gris);
+        text-align: center;
+    }
+    .Section-p--tecnicas{
+        width: 90%;
+        background-color: var(--color-principal-azul);
+        font-family: var(--font-textos);
+        padding: 2rem 3rem;
+        line-height: 1.875rem;
+        text-align: justify;
+    }
+
+    /* Grid imágenes - tecnicas */
+
+    .Imgs-wrapper{
+        width: 90%;
+        background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2rem auto;
+        gap: 1rem;
+        padding: 1rem;
+
+    }
+    .Imgs-grid{
+        justify-content: center;
+        align-items: center;
     }
 
     /* EFECTOS */
