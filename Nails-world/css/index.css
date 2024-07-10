@@ -55,7 +55,7 @@
     }
     /* Fin reset */
 
-    /* PÁGINA DE INICIO */
+    /* ++++++++++++++++ PÁGINA DE INICIO ++++++++++++++++ */
     
     .Header-wrapper{
     background-color: white;
@@ -66,7 +66,7 @@
         margin: 32px auto;
     }
 
-    /* Menú */
+    /* MENÚ INICIO */
 
     .Header-nav{
     }
@@ -122,9 +122,9 @@
         margin: 2rem 0 0 0;
     }
 
-    /* FORMAS */
+    /* ++++++++++++++++ FORMAS ++++++++++++++++ */
 
-    /* Encabezado formas */
+    /* ENCABEZADO FORMAS */
 
     .Header-wrapper--formas{
         position: relative;
@@ -144,8 +144,9 @@
         text-shadow: var(--color-gris);
         font-size: 11em;
     }
+    
 
-    /* Menú formas */
+    /* MENÚ - FORMAS */
 
     .Header-ul--formas{
         width: 60%;
@@ -168,7 +169,18 @@
         transform: scale(1.1);
     }
 
-    /* Section formas */
+    .Logo-sticky{
+        display: flex;
+        flex-flow: row nowrap;
+        
+    }
+    .Img-sticky{
+        width: 4.5rem;
+        position: fixed;
+        margin: 1rem 0 0 0.5rem;
+    }   
+
+    /* SECTION - FORMAS */
 
     .Section-formas{
         width: 90%;
@@ -195,7 +207,7 @@
         text-align: justify;
     }
 
-    /* Contenido - formas */
+    /* CONTENIDO - FORMAS */
 
     .Article-formas{
         width: 90%;
@@ -227,14 +239,9 @@
         line-height: 1.5625rem;
     }
 
+    /* ++++++++++++++++ TÉCNICAS ++++++++++++++++ */
 
-
-
-
-
-    /* TÉCNICAS */
-
-    /* Encabezado técnicas */
+    /* ENCABEZADO - TÉCNICAS */
 
     .Header-wrapper--tecnicas{
         position: relative;
@@ -255,7 +262,7 @@
         font-size: 11em;
     }
 
-    /* Menú técnicas */
+    /* MENÚ TECNICAS */
 
     .Header-ul--tecnicas{
         width: 60%;
@@ -278,7 +285,8 @@
         transform: scale(1.1);
     }
 
-    /* Section - tecnicas */
+    /* ENCABEZADO TÉCNICAS */
+
     .Section-tecnicas{
         width: 90%;
         margin: 0 auto;
@@ -304,7 +312,7 @@
         text-align: justify;
     }
 
-    /* Grid imágenes - tecnicas */
+    /* GRID IMAGENES - TECNICAS */
 
     .Imgs-wrapper{
         width: 90%;
@@ -321,7 +329,7 @@
         align-items: center;
     }
 
-    /* EFECTOS */
+    /* ++++++++++++++++ EFECTOS ++++++++++++++++ */
 
     /* Encabezado efectos */
 
