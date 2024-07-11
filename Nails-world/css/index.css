@@ -44,6 +44,7 @@
     --font-subtitulos: "Bebas Neue", sans-serif;
     --font-textos: "Montserrat", sans-serif;
     --color-gris: #9d9d9d;
+    --sombra-textos: 1px 1px 4px #a4a4a4;
     }
     
     html {
@@ -227,6 +228,7 @@
         font-size: 5em;
         font-family: var(--font-titulos);
         text-transform: capitalize;
+        text-shadow: var(--sombra-textos);
     }
     .Article-img--formas{
         width: 6.25rem;
@@ -319,7 +321,7 @@
         background-color: white;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 2rem auto;
+        margin: 3rem auto;
         gap: 1rem;
         padding: 1rem;
 
@@ -329,9 +331,36 @@
         align-items: center;
     }
 
+    /* CONTENIDO - TECNICAS */
+
+    .Article-tecnicas{
+        width: 120vh;
+        margin: 3rem auto;
+
+    }
+    .Article-wrapper--tecnicas{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        
+    }
+    .Article-h3--tecnicas{
+        font-size: 5rem;
+        font-family: var(--font-titulos);
+        text-transform: capitalize;
+        text-shadow: var(--sombra-textos);
+    }
+    .Article-p--tecnicas{
+        font-family: var(--font-textos);
+        line-height: 1.5625rem;
+        margin: 0 0 4rem 0;
+    }
+
     /* ++++++++++++++++ EFECTOS ++++++++++++++++ */
 
-    /* Encabezado efectos */
+    /* ENCABEZADO EFECTOS */
 
     .Header-wrapper--efectos{
         position: relative;
@@ -351,6 +380,29 @@
         text-shadow: var(--color-gris);
         font-size: 11em;
     }
+
+        /* MENÚ EFECTOS */
+
+        .Header-ul--efectos{
+            width: 60%;
+            margin: 2rem auto;
+    
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Header-li--efectos{
+            font-family: var(--font-subtitulos);
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: .0625rem;
+            cursor: pointer;
+        }
+        .Header-li--efectos:hover{
+            color: var(--color-principal-azul) ;
+            transform: scale(1.1);
+        }
 
     /* KEY FRAMES */
     
