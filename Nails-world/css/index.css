@@ -170,12 +170,12 @@
         transform: scale(1.1);
     }
 
-    .Logo{
+    .Logo-sticky{
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
     }
-    .Logo-sticky{
+    .Img-sticky{
         width: 4.5rem;
         position: fixed;
         margin: 1rem 0 0 0.5rem;
@@ -404,8 +404,51 @@
             transform: scale(1.1);
         }
 
+        /* ++++++++++++++++ CONTACTO ++++++++++++++++ */
+
+
+        .Header-wrapper--contacto{
+            position: relative;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Header-img--contacto{
+            width: 100%;
+        }
+        .Header-h1--contacto{
+            position: absolute;
+            font-family: var(--font-titulos);
+            text-transform: capitalize;
+            text-shadow: var(--color-gris);
+            font-size: 11em;
+        }
+
+        /* MENÚ - CONTACTO */
+
+        .Header-ul--contacto{
+            width: 60%;
+            margin: 2rem auto;
+    
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Header-li--contacto{
+            font-family: var(--font-subtitulos);
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: .0625rem;
+            cursor: pointer;
+        }
+        .Header-li--contacto:hover{
+            color: var(--color-principal-azul) ;
+            transform: scale(1)
+        }
+
     /* KEY FRAMES */
     
-
-
 

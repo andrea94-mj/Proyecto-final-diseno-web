@@ -6,32 +6,34 @@
     <title>Nails World - Técnicas</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
-    <!-- Font Bebas Neue -->
+    <!-- Font Bebas Neue (Se aplica en el menú y algunos subtítulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Font Ms Madi -->
+    <!-- Font Ms Madi (Se aplica para los títulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ms+Madi&display=swap" rel="stylesheet">
-    <!-- Font Montserrat -->
+    <!-- Font Montserrat (Se aplica para los textos del contenido en general) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado donde se incluye la imagen de cabecera y el título de la sección de efectos -->
     <header class="Header-wrapper--efectos">
         <picture><img src="imgs/fondo-titulo-azul.jpg" alt="img-cabecera" title="img-cabecera" class="Header-img--efectos"></picture>
         <h1 class="Header-h1--efectos">efectos</h1>
     </header>
 
-    <!-- Menú -->
+    <!-- Logo sticky común para todas las secciones, menos la sección de inicio -->
+    <div class="Logo-sticky">
+        <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
+    </div>
+    
+    <!-- Menú donde aparecen todas las secciones, en el responsive desaparecerá para convertirse en un desplegable -->
     <nav>
-        <div class="Logo-sticky">
-            <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
-        </div>
         <ul class="Header-ul--efectos">
             <li class="Header-li--efectos"><a href="Inicio.html">inicio</a></li>
             <li class="Header-li--efectos"><a href="Formas.html">formas</a></li>
@@ -41,5 +43,30 @@
         </ul>
     </nav>
 
+    <!-- Footer del documento, donde se incluyen las redes sociales y el copyright -->
+            <footer class="Footer">
+            <ul class="Footer-wrapper">
+                <li class="Footer-li">
+                    <a href="https://www.facebook.com/?locale=es_ES" title="facebook pixar" target="_blank"
+                        rel="noreferrer">
+                        <img src="imgs/facebook-svgrepo-com.svg" class="icono__rrss" alt="icono facebook" title="facebook"
+                            oading="lazy">
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a href="https://x.com/?lang=es" title="twitter pixar" target="_blank" rel="noreferrer">
+                        <img src="imgs/twitter-154-svgrepo-com.svg" class="icono__rrss" alt="icono twitter" title="twitter"
+                            loading="lazy">
+                    </a>
+                </li>
+                <li class="Footer-li">
+                    <a href="https://www.instagram.com/" title="instagram pixar" target="_blank" rel="noreferrer">
+                        <img src="imgs/instagram-svgrepo-com.svg" class="icono__rrss" alt="icono instagram"
+                            title="instagram" loading="lazy">
+                    </a>
+                </li>
+            </ul>
+            <div class="Footer-copyright">&#169; 2024 Nails World</div>
+        </footer>
 </body>
 </html>

@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
     
-    <!-- Font Bebas Neue (Títulos secundarios) -->
+    <!-- Font Bebas Neue (Se aplica en el menú y algunos subtítulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Font Ms Madi (Títulos)-->
+    <!-- Font Ms Madi (Se aplica para los títulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ms+Madi&display=swap" rel="stylesheet">
-    <!-- Font Montserrat (Textos) -->
+    <!-- Font Montserrat (Se aplica para los textos del contenido en general) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -25,19 +25,19 @@
 </head>
 
 <body>
-    <!-- Encabezado -->
+    <!-- Encabezado donde se incluye la imagen de cabecera y el título de la sección de formas -->
     <header class="Header-wrapper--formas">
         <picture><img src="imgs/fondo-titulo-azul.jpg" alt="img-cabecera" title="img-cabecera"
                 class="Header-img--formas"></picture>
         <h1 class="Header-h1--formas">formas</h1>
     </header>
     
-
-        <!-- Menú -->
-        <div class="Logo">
-            <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Logo-sticky">
-            <img  src="" alt="" class="Logo-responsive">
-        </div>
+    <!-- Logo sticky común para todas las secciones, menos la sección de inicio -->
+    <div class="Logo-sticky">
+        <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
+    </div>
+    
+    <!-- Menú donde aparecen todas las secciones, en el responsive desaparecerá para convertirse en un desplegable -->
     <nav>
         <ul class="Header-ul--formas">
             <li class="Header-li--formas"><a href="Inicio.html">inicio</a></li>
@@ -49,7 +49,7 @@
     </nav>
 
 
-    <!-- Introducción-->
+    <!-- Introducción a la sección de formas, donde se incluye un h2 con un título principal y un párrafo informativo de la importancia de la forma de las uñas-->
     <section class="Section-formas">
         <h2 class="Section-h2--formas">¿Qué importancia tiene la forma de las uñas?</h2>
         <p class="Section-p--formas">Las uñas deben tener una forma determinada dependiendo del tipo de mano que tengas,
@@ -58,7 +58,7 @@
             tipología de tus manos.</p>
     </section>
 
-    <!-- Contenido -->
+    <!-- Contenido de la sección de formas, donde se incluye un h3 con el título de cada forma, una imagen y un texto que explica como se realiza cada forma y las ventajas y desventajas que tiene cada una -->
     <article class="Article-formas">
         <div class="Article-wrapper--formas">
             <h3 class="Article-h3--formas">redonda</h3>
@@ -118,6 +118,7 @@
         </div>
     </article>
 
+    <!-- Footer del documento, donde se incluyen las redes sociales y el copyright -->
     <footer class="Footer">
         <ul class="Footer-wrapper">
             <li class="Footer-li">

@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
 
-    <!-- Font Bebas Neue -->
+    <!-- Font Bebas Neue (Se aplica en el menú y algunos subtítulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Font Ms Madi -->
+    <!-- Font Ms Madi (Se aplica para los títulos) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ms+Madi&display=swap" rel="stylesheet">
-    <!-- Font Montserrat -->
+    <!-- Font Montserrat (Se aplica para los textos del contenido en general) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -26,18 +26,20 @@
 
 <body>
 
-    <!-- Encabezado -->
+    <!-- Encabezado donde se incluye la imagen de cabecera y el título de la sección de técnicas -->
     <header class="Header-wrapper--tecnicas">
         <picture><img src="imgs/fondo-titulo-azul.jpg" alt="img-cabecera" title="img-cabecera"
                 class="Header-img--tecnicas"></picture>
         <h1 class="Header-h1--tecnicas">técnicas</h1>
     </header>
 
-    <!-- Menú -->
+    <!-- Logo sticky común para todas las secciones, menos la sección de inicio -->
+    <div class="Logo-sticky">
+        <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
+    </div>
+
+    <!-- Menú donde aparecen todas las secciones, en el responsive desaparecerá para convertirse en un desplegable -->
     <nav>
-        <div class="Logo-sticky">
-            <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
-        </div>
         <ul class="Header-ul--tecnicas">
             <li class="Header-li--tecnicas"><a href="Inicio.html">inicio</a></li>
             <li class="Header-li--tecnicas"><a href="Formas.html">formas</a></li>
@@ -47,7 +49,7 @@
         </ul>
     </nav>
 
-    <!-- Introducción -->
+    <!-- Introducción a la sección de técnicas, donde se incluye un h2 con un título principal y un párrafo informativo de como han avanzado las técnicas de manicura-->
     <section class="Section-tecnicas">
         <h2 class="Section-h2--tecnicas">En esta sección podrás informarte sobre las diferentes técnicas de manicura que
             se utilizan en la actualidad, siempre a manos de profesionales.</h2>
@@ -61,7 +63,7 @@
             técnicas son nocivos para tus uñas.</p>
     </section>
 
-    <!-- Contenido -->
+    <!-- Contenido de la sección de técnicas, donde aparece un grid con 3 imágenes y un wrapper para cada una de las técnicas que incluye un h3 como título y un párrafo explicando cada una de las técnicas y la duración -->
 
     <div class="Imgs-wrapper">
         <img src="imgs/img-grid1.jpg" alt="tecnicas-img1" class="Imgs-grid" title="tecnicas-img1" loading="lazy">
@@ -117,8 +119,8 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="Footer">
+    <!-- Footer del documento, donde se incluyen las redes sociales y el copyright -->
+        <footer class="Footer">
         <ul class="Footer-wrapper">
             <li class="Footer-li">
                 <a href="https://www.facebook.com/?locale=es_ES" title="facebook pixar" target="_blank"
