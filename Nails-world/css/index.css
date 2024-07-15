@@ -50,7 +50,7 @@
     html {
     scroll-behavior: smooth;
     }
-    
+
     body {
     background: linear-gradient(to bottom, white, var(--color-principal-azul));
     }
@@ -63,8 +63,8 @@
     }
 
     .Header-img{
-        width: 60%;
-        margin: 32px auto;
+        width: 50%;
+        margin: 2rem auto;
     }
 
     /* MENÚ INICIO */
@@ -123,6 +123,26 @@
         margin: 2rem 0 0 0;
     }
 
+    /* LOGO STICKY */
+
+    .Logo-sticky{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    @keyframes girar {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .Img-sticky{
+        width: 5rem;
+        animation: girar 5s linear infinite;
+    } 
+
     /* ++++++++++++++++ FORMAS ++++++++++++++++ */
 
     /* ENCABEZADO FORMAS */
@@ -170,17 +190,6 @@
         transform: scale(1.1);
     }
 
-    .Logo-sticky{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-    }
-    .Img-sticky{
-        width: 4.5rem;
-        position: fixed;
-        margin: 1rem 0 0 0.5rem;
-    }   
-
     /* SECTION - FORMAS */
 
     .Section-formas{
@@ -194,13 +203,14 @@
         gap: 2.5rem;
     }
     .Section-h2--formas{
+        width: 80%;
         font-size: 3em;
         font-family: var(--font-textos);
         color: var(--color-gris);
         text-align: center;
     }
     .Section-p--formas{
-        width: 70%;
+        width: 80%;
         background-color: var(--color-principal-azul);
         font-family: var(--font-textos);
         padding: 2rem 3rem;
@@ -300,6 +310,7 @@
         gap: 2.5rem;
     }
     .Section-h2--tecnicas{
+        width: 90%;
         font-size: 2em;
         font-family: var(--font-textos);
         color: var(--color-gris);
@@ -358,11 +369,11 @@
         margin: 0 0 4rem 0;
     }
 
-    /* ++++++++++++++++ EFECTOS ++++++++++++++++ */
+    /* ++++++++++++++++ GALERÍA ++++++++++++++++ */
 
-    /* ENCABEZADO EFECTOS */
+    /* ENCABEZADO GALERÍA */
 
-    .Header-wrapper--efectos{
+    .Header-wrapper--galeria{
         position: relative;
         display: flex;
         flex-flow: row nowrap;
@@ -370,10 +381,10 @@
         align-items: center;
     }
 
-    .Header-img--efectos{
+    .Header-img--galeria{
         width: 100%;
     }
-    .Header-h1--efectos{
+    .Header-h1--galeria{
         position: absolute;
         font-family: var(--font-titulos);
         text-transform: capitalize;
@@ -381,9 +392,9 @@
         font-size: 11em;
     }
 
-        /* MENÚ EFECTOS */
+        /* MENÚ GALERÍA */
 
-        .Header-ul--efectos{
+        .Header-ul--galeria{
             width: 60%;
             margin: 2rem auto;
     
@@ -392,16 +403,49 @@
             justify-content: space-between;
             align-items: center;
         }
-        .Header-li--efectos{
+        .Header-li--galeria{
             font-family: var(--font-subtitulos);
             text-transform: uppercase;
             font-size: 1.5em;
             letter-spacing: .0625rem;
             cursor: pointer;
         }
-        .Header-li--efectos:hover{
+        .Header-li--galeria:hover{
             color: var(--color-principal-azul) ;
             transform: scale(1.1);
+        }
+
+        /* GRID - GALEREÍA */
+
+        .Section-galeria{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            margin: 1rem auto;
+        }
+
+        .Section-imgs{
+            width: 270px;
+            height: 270px;
+            background-color: black ;
+            object-fit: cover;
+            display: block;
+            justify-content: center;
+            align-content: center;
+        }
+        .Section-imgs:hover{
+            transform:scale(1.05);
+            transition: ;
+        }
+        .Section-h2--galeria{
+            text-align: center;
+            font-family: var(--font-subtitulos);
         }
 
         /* ++++++++++++++++ CONTACTO ++++++++++++++++ */
@@ -449,6 +493,5 @@
             transform: scale(1)
         }
 
-    /* KEY FRAMES */
     
 
