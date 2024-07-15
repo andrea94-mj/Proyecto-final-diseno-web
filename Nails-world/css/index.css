@@ -398,40 +398,40 @@
     }
 
     .Header-img--galeria{
-        width: 100%;
+    width: 100%;
     }
     .Header-h1--galeria{
-        position: absolute;
-        font-family: var(--font-titulos);
-        text-transform: capitalize;
-        text-shadow: var(--color-gris);
-        font-size: 11em;
+    position: absolute;
+    font-family: var(--font-titulos);
+    text-transform: capitalize;
+    text-shadow: var(--color-gris);
+    font-size: 11em;
     }
 
         /* MENÚ GALERÍA */
 
-        .Header-ul--galeria{
-            width: 60%;
-            margin: 2rem auto;
-    
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .Header-li--galeria{
-            font-family: var(--font-subtitulos);
-            text-transform: uppercase;
-            font-size: 1.5em;
-            letter-spacing: .0625rem;
-            cursor: pointer;
-        }
-        .Header-li--galeria:hover{
-            color: var(--color-principal-azul) ;
-            transform: scale(1.1);
-        }
+    .Header-ul--galeria{
+        width: 60%;
+        margin: 2rem auto;
 
-        /* GRID - GALEREÍA */
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Header-li--galeria{
+        font-family: var(--font-subtitulos);
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: .0625rem;
+        cursor: pointer;
+    }
+    .Header-li--galeria:hover{
+        color: var(--color-principal-azul) ;
+        transform: scale(1.1);
+    }
+
+        /* GRID - GALERÍA */
 
         .Section-galeria{
             width: 100%;
@@ -443,28 +443,54 @@
             align-items: center;
             gap: 0.5rem;
             padding: 1rem;
-            margin: 1rem auto;
+            margin: 5rem auto;
         }
 
-        .Section-imgs{
+        .Galeria-img{
             width: 270px;
             height: 270px;
             background-color: black ;
             object-fit: cover;
-            display: block;
             justify-content: center;
             align-content: center;
             border-radius: 20%;
             cursor: pointer;
         }
-        .Section-imgs:hover{
+        .Galeria-img:hover{
             transform:scale(1.03);
             transition: 0.5s ease-in ;
         }
-        .Section-h2--galeria{
+        /* .Section-h2--galeria{
             text-align: center;
             font-family: var(--font-subtitulos);
-        }
+        }  */
+
+        .Lightbox{
+            width: 100%;
+            min-height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: none;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            gap: 1.5rem;
+            }
+            .Lightbox-btn{
+                cursor: pointer;
+                background-color: white;
+                width: 20px;
+                border-radius: 20%;
+            }
+            .Imagen-grande{
+                width: 40%;
+                border-radius: 20%;
+            }
+
+
 
         /* ++++++++++++++++ CONTACTO ++++++++++++++++ */
 
