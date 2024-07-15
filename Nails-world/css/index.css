@@ -146,6 +146,10 @@
         flex-flow: row nowrap;
         justify-content: center;
     }
+    .Img-sticky{
+        width: 5rem;
+        animation: girar 5s linear infinite;
+    } 
     @keyframes girar {
         from {
             transform: rotate(0deg);
@@ -154,10 +158,6 @@
             transform: rotate(360deg);
         }
     }
-    .Img-sticky{
-        width: 5rem;
-        animation: girar 5s linear infinite;
-    } 
 
     /* ++++++++++++++++ FORMAS ++++++++++++++++ */
 
@@ -511,7 +511,42 @@
             transform: scale(1)
         }
 
-        /* FORMULARIO - CONTACTO */
+        /* MARQUESINA - CONTACTO */
+
+        .Marquesina{
+            width: 100%;
+            overflow: hidden;
+            margin: 5rem auto;
+    
+        }
+        .Marquesina-caja{
+            width: 200%;
+            background-color: black;
+    
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            align-content: center;
+    
+            animation: slide 15s linear infinite;
+        }
+    
+        .Marquesina-texto{
+            font-family: var(--font-subtitulos);
+            color: white;
+            text-align: center;
+            font-size: 1.3em;
+            letter-spacing: 0.05em;
+            padding: 0.5rem 0;
+        }
+
+        @keyframes slide{
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
 
 
 
