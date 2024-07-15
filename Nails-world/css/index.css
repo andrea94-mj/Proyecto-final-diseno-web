@@ -76,7 +76,7 @@
         margin: auto;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
     }
     .Header-li{
@@ -97,7 +97,7 @@
         width: 100%;
         background-color: var(--color-gris);
         margin: 3rem auto 0;
-        padding: 2.5rem;
+        padding: 1rem 2rem;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -108,8 +108,10 @@
         gap: 3rem;
     }
     .Footer-h3{
-        font-family: var(--font-subtitulos);
-        font-size: 1.1em;
+        font-family: var(--font-textos);
+        font-size: 0.9em;
+        text-transform: capitalize;
+        font-weight: 500;
     }
     .Footer-h3:hover{
         opacity: 50%;
@@ -122,6 +124,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        padding: 0 0 0 2.5rem;
     }
     
     .Footer-li{
@@ -135,8 +138,9 @@
     .Footer-copyright{
         font-family: var(--font-subtitulos);
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.3em;
         margin: 2.5rem 0 0 0;
+        letter-spacing: 0.02em;
     }
 
     /* LOGO STICKY */
@@ -149,6 +153,7 @@
     .Img-sticky{
         width: 5rem;
         animation: girar 5s linear infinite;
+        z-index: -1;
     } 
     @keyframes girar {
         from {
@@ -435,15 +440,15 @@
 
         .Section-galeria{
             width: 100%;
+            margin: 5rem auto;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             overflow: hidden;
             justify-content: center;
-            align-items: center;
-            gap: 0.5rem;
+            gap: 5rem;
             padding: 1rem;
-            margin: 5rem auto;
+            
         }
 
         .Galeria-img{
@@ -452,12 +457,11 @@
             background-color: black ;
             object-fit: cover;
             justify-content: center;
-            align-content: center;
             border-radius: 20%;
             cursor: pointer;
         }
         .Galeria-img:hover{
-            transform:scale(1.03);
+            transform:scale(1.02);
             transition: 0.5s ease-in ;
         }
         /* .Section-h2--galeria{
