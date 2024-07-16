@@ -6,22 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nails World - Técnicas</title>
     <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
-
-    <!-- Font Bebas Neue (Se aplica en el menú y algunos subtítulos) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <!-- Font Ms Madi (Se aplica para los títulos) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ms+Madi&display=swap" rel="stylesheet">
-    <!-- Font Montserrat (Se aplica para los textos del contenido en general) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ms+Madi&display=swap"
-        rel="stylesheet">
+    <script src="./js/Tecnicas.js" defer></script>
 </head>
 
 <body>
@@ -32,15 +17,18 @@
     </header>
 
     <!-- Menú donde aparecen todas las secciones, en el responsive desaparecerá para convertirse en un desplegable -->
-    <nav>
-        <ul class="Header-ul--tecnicas">
-            <li class="Header-li--tecnicas"><a href="Inicio.html">inicio</a></li>
-            <li class="Header-li--tecnicas"><a href="Formas.html">formas</a></li>
-            <li class="Header-li--tecnicas"><a href="Tecnicas.html">técnicas</a></li>
-            <li class="Header-li--tecnicas"><a href="Galeria.html">galería</a></li>
-            <li class="Header-li--tecnicas"><a href="Contacto.html">contacto</a></li>
-        </ul>
-    </nav>
+    <header class="Header-responsive">
+        <button class="Header-btn">&#8788;</button>
+        <nav class="Header-nav">
+            <ul class="Header-ul">
+                <li class="Header-li"><a href="Inicio.html">inicio</a></li>
+                <li class="Header-li"><a href="Formas.html">formas</a></li>
+                <li class="Header-li"><a href="Tecnicas.html">técnicas</a></li>
+                <li class="Header-li"><a href="Galeria.html">galería</a></li>
+                <li class="Header-li"><a href="Contacto.html">contacto</a></li>
+            </ul>
+        </nav>
+        </header>
 
     <!-- Introducción a la sección de técnicas, donde se incluye un h2 con un título principal y un párrafo informativo de como han avanzado las técnicas de manicura-->
     <section class="Section-tecnicas">
@@ -101,7 +89,7 @@
             </p>
         </div>
         <div class="Article-wrapper--tecnicas">
-            <h3 class="Article-h3--tecnicas">esmaltado semi-permanente</h3>
+            <h3 class="Article-h3--tecnicas Semi-permanente">esmaltado semi-permanente</h3>
             <p class="Article-p--tecnicas">Esta es la técnica es la menos nociva para tu uña, ya que es el tipo de
                 esmaltado más parecido al normal, pero te puede durar de 15 a 20 días sin necesidad de preocuparte por
                 que se te descascarillen o se rayen. Esta técnica no permite el alargado de tus uñas ya que simplemente
@@ -117,26 +105,27 @@
         <img src="imgs/logo-azul-redondo.svg" alt="Logo-sticky" title="Logo-sticky" class="Img-sticky">
     </div>
 
-    <!-- Footer del documento, donde se incluyen las redes sociales y el copyright -->
-        <footer class="Footer">
-            <nav class="Footer-nav">
-                <h3 class="Footer-h3"><a href="Inicio.html">inicio</a></h3>
-                <h3 class="Footer-h3"><a href="Formas.html">formas</a></h3>
-                <h3 class="Footer-h3"><a href="Tecnicas.html">técnicas</a></h3>
-                <h3 class="Footer-h3"><a href="Galeria.html">galería</a></h3>
-                <h3 class="Footer-h3"><a href="Contacto.html">contacto</a></h3>
-            </nav>
+    <!-- Footer del documento, donde se incluyen las redes sociales, las diferentes secciones del documento y el copyright -->
+    <footer class="Footer">
+        <div class="Footer-wrapper">
+        <nav class="Footer-nav">
+            <h3 class="Footer-h3"><a href="Inicio.html">inicio</a></h3>
+            <h3 class="Footer-h3"><a href="Formas.html">formas</a></h3>
+            <h3 class="Footer-h3"><a href="Tecnicas.html">técnicas</a></h3>
+            <h3 class="Footer-h3"><a href="Galeria.html">galería</a></h3>
+            <h3 class="Footer-h3"><a href="Contacto.html">contacto</a></h3>
+        </nav>
         <ul class="Footer-ul">
             <li class="Footer-li">
                 <a href="https://www.facebook.com/?locale=es_ES" title="facebook" target="_blank"
                     rel="noreferrer">
-                    <img src="imgs/facebook-svgrepo-com.svg"  alt="icono facebook" title="facebook"
-                        oading="lazy">
+                    <img src="imgs/facebook-svgrepo-com.svg" alt="icono facebook" title="facebook"
+                        loading="lazy">
                 </a>
             </li>
             <li class="Footer-li">
                 <a href="https://x.com/?lang=es" title="twitter" target="_blank" rel="noreferrer">
-                    <img src="imgs/twitter-154-svgrepo-com.svg"  alt="icono twitter" title="twitter"
+                    <img src="imgs/twitter-154-svgrepo-com.svg" alt="icono twitter" title="twitter"
                         loading="lazy">
                 </a>
             </li>
@@ -148,6 +137,7 @@
             </li>
         </ul>
         <div class="Footer-copyright">&#169; Nails World</div>
+        </div>
     </footer>
 </body>
 
