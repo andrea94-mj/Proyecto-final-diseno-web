@@ -58,13 +58,38 @@
 
     /* ++++++++++++++++ PÁGINA DE INICIO ++++++++++++++++ */
     
-    .Header-wrapper{
+    .Header-home{
     background-color: white;
     }
 
     .Header-img{
         width: 50%;
         margin: 2rem auto;
+    }
+
+    /* HEADER COMÚN PARA TODAS LAS SECCIONES CON EFECTO PARALLAX */
+
+    .Header-wrapper{
+        width: 100%;
+        height: 40vh;
+        background-image: url(/Nails-world/imgs/fondo-titulo-azul.jpg);
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .Header-h1{
+        color: white;
+        position: fixed;
+        top: 5%;
+        left: 50%;
+        font-family: var(--font-titulos);
+        text-transform: capitalize;
+        text-shadow: 2px 2px 6px rgb(146, 146, 146);
+        font-size: 9em;
+        margin-left: -1.2em;
     }
 
     /* MENÚ INICIO */
@@ -421,23 +446,33 @@
 
         /* MENÚ GALERÍA */
 
-    .Header-ul--galeria{
-        width: 60%;
+    .Header-responsive{
+        width: 90%;
         margin: 2rem auto;
-
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
     }
-    .Header-li--galeria{
+    .Header-btn{
+        width: 50px;
+        display: none;
+    }
+    .Header-ul{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .Header-li{
         font-family: var(--font-subtitulos);
         text-transform: uppercase;
         font-size: 1.5em;
         letter-spacing: .0625rem;
         cursor: pointer;
     }
-    .Header-li--galeria:hover{
+    .Header-li:hover{
         color: var(--color-principal-azul) ;
         transform: scale(1.1);
     }
@@ -573,6 +608,12 @@
             padding: 0.5rem 0;
         }
 
+        
+
+
+        /* KEY FRAMES */
+
+
         @keyframes slide{
             from{
                 transform: translateX(0%);
@@ -581,6 +622,47 @@
                 transform: translateX(-50%);
             }
         }
+
+        /* MEDIA QUERY */
+
+        @media (max-width: 800px){
+            .Header-responsive{
+                width: 90%;
+                max-width: 1400px;
+                display: flex;
+                justify-content: flex-end;
+            }
+            .Header-btn{
+                width: 50px;
+                display: block;
+            }
+            .Header-nav{
+                width: 100%;
+                display: none;
+            }
+            .Header-nav.isActive{
+                width: 100%;
+                display: block;
+            }
+            .Header-ul{
+                width: 100%;
+                margin: 0 auto;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+            }
+            .Header-li{
+                font-family: var(--font-subtitulos);
+                text-transform: uppercase;
+                font-size: 1.5em;
+                letter-spacing: .0625rem;
+                cursor: pointer;
+            }
+        }
+
+
 
 
 
