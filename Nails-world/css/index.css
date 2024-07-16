@@ -36,7 +36,9 @@
     display: block;
     background-color: transparent;
     }
-    
+
+    /* Fin reset */
+
     :root {
     font-size: 100%;
     --color-principal-azul: #5eb4b4;
@@ -46,15 +48,59 @@
     --color-gris: #9d9d9d;
     --sombra-textos: 1px 1px 4px #a4a4a4;
     }
-    
-    html {
+        html {
     scroll-behavior: smooth;
     }
 
     body {
     background: linear-gradient(to bottom, white, var(--color-principal-azul));
     }
-    /* Fin reset */
+
+    /* TIPOGRAFÍAS */
+
+    /* montserrat-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/montserrat-v26-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* ms-madi-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Ms Madi';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ms-madi-v2-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* bebas-neue-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/bebas-neue-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+    
 
     /* ++++++++++++++++ PÁGINA DE INICIO ++++++++++++++++ */
     
@@ -185,14 +231,6 @@
         animation: girar 5s linear infinite;
         z-index: -1;
     } 
-    @keyframes girar {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
-    }
 
     /* ++++++++++++++++ FORMAS ++++++++++++++++ */
 
@@ -613,13 +651,23 @@
 
         /* KEY FRAMES */
 
-
+        /* Key Frame para la marquesina, hace que se desplace el texto */
         @keyframes slide{
             from{
                 transform: translateX(0%);
             }
             to{
                 transform: translateX(-50%);
+            }
+        }
+
+        /* Key Frame para la rotación del logo inferior redondo */
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
             }
         }
 
