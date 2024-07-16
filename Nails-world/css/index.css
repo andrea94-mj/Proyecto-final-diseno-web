@@ -96,6 +96,11 @@
     .Footer{
         width: 100%;
         background-color: var(--color-gris);
+    }
+
+    .Footer-wrapper{
+        width: 100%;
+        max-width: 1400px;
         margin: 3rem auto 0;
         padding: 1rem 2rem;
         display: flex;
@@ -243,6 +248,7 @@
 
     .Article-formas{
         width: 90%;
+        max-width: 1400px;
         margin: 0 auto;
     }
     
@@ -266,7 +272,7 @@
 
     }
     .Article-p--formas{
-        width: 90vh;
+        width: 85%;
         font-family: var(--font-textos);
         text-align: justify;
         line-height: 1.5625rem;
@@ -366,7 +372,7 @@
     /* CONTENIDO - TECNICAS */
 
     .Article-tecnicas{
-        width: 120vh;
+        width: 85%;
         margin: 3rem auto;
 
     }
@@ -439,7 +445,7 @@
         /* GRID - GALERÍA */
 
         .Section-galeria{
-            width: 100%;
+            width: 90%;
             margin: 5rem auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -447,13 +453,11 @@
             overflow: hidden;
             justify-content: center;
             gap: 5rem;
-            padding: 1rem;
-            
         }
 
         .Galeria-img{
-            width: 270px;
-            height: 270px;
+            width: 100%;
+            height: 100%;
             background-color: black ;
             object-fit: cover;
             justify-content: center;
