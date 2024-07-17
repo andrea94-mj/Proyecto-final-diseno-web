@@ -216,7 +216,7 @@
     .Header-wrapper{
         width: 100%;
         height: 40vh;
-        background-image: url(/Nails-world/imgs/fondo-titulo-azul.jpg);
+        background-image: url(/Nails-world/imgs/fondo-parallax1.webp);
         position: relative;
         background-size: cover;
         background-repeat: no-repeat;
@@ -231,11 +231,11 @@
         font-family: var(--font-titulos);
         text-transform: capitalize;
         text-shadow: 2px 2px 6px rgb(146, 146, 146);
-        font-size: 9em;
+        font-size: 11em;
         margin-left: -1.2em;
     }
     .Header-h1.Right{
-        left: 48%;
+        left: 49%;
     }
 
     /* ENCABEZADO - FORMAS */
@@ -331,29 +331,16 @@
         text-align: justify;
     }
 
-    /* GRID IMAGENES - TECNICAS */
+    
 
-    .Imgs-wrapper{
-        width: 85%;
-        max-width: 1400px;
-        background-color: white;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin: 3rem auto;
-        gap: 1rem;
-        padding: 1rem;
-    }
-    .Imgs-grid{
-        justify-content: center;
-        align-items: center;
-    }
+
 
     /* CONTENIDO - TECNICAS */
 
     .Article-tecnicas{
         width: 80%;
         max-width: 1400px;
-        margin: 3rem auto;
+        margin: 5rem auto;
     }
     .Article-wrapper--tecnicas{
         display: flex;
@@ -370,10 +357,18 @@
         text-shadow: var(--sombra-textos);
     }
     .Article-p--tecnicas{
+        width: 82%;
         font-family: var(--font-textos);
         line-height: 1.5625rem;
-        margin: 0 0 4rem 0;
+        margin: 0 0 2rem 0;
     }
+    .Article-img--tecnicas{
+        width: 45%;
+        border-radius: 50%;
+        box-shadow: 1px 1px 6px #a5a5a5;
+        margin: 0 0 5rem 0;
+    }
+
 
     /* ++++++++++++++++ GALERÍA ++++++++++++++++ */
 
@@ -384,8 +379,8 @@
             max-width: 1400px;
             margin: 5rem auto;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 1fr);
             overflow: hidden;
             justify-content: center;
             gap: 5rem;
@@ -393,20 +388,17 @@
         .Galeria-img{
             width: 100%;
             height: 100%;
-            background-color: black ;
             object-fit: cover;
             justify-content: center;
             border-radius: 20%;
+            box-shadow: 1px 1px 6px #a5a5a5;
+            /* border: solid 3px #000000; */
             cursor: pointer;
         }
         .Galeria-img:hover{
             transform:scale(1.02);
             transition: 0.5s ease-in ;
         }
-        /* .Section-h2--galeria{
-            text-align: center;
-            font-family: var(--font-subtitulos);
-        }  */
 
         .Lightbox{
             width: 100%;
@@ -423,10 +415,12 @@
             gap: 1.5rem;
             }
             .Lightbox-btn{
-                cursor: pointer;
-                background-color: white;
-                width: 20px;
-                border-radius: 20%;
+            cursor: pointer;
+            background-color: white;
+            width: 2rem;
+            font-size: 1.5em;
+            font-weight: 600;
+            border-radius: 20%;
             }
             .Imagen-grande{
                 width: 40%;
@@ -441,7 +435,7 @@
         .Marquesina{
             width: 100%;
             overflow: hidden;
-            margin: 5rem auto;
+            margin: 5rem auto 2rem;
         }
         .Marquesina-caja{
             width: 200%;
@@ -459,6 +453,36 @@
             letter-spacing: 0.05em;
             padding: 0.5rem 0;
         }
+
+        /* ENCABEZADO - CONTACTO */
+
+        .Section-contacto{
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem;
+            gap: 2.5rem;
+        }
+        .Section-h2--contacto{
+            width: 90%;
+            font-size: 2em;
+            font-family: var(--font-textos);
+            color: var(--color-gris);
+            text-align: center;
+        }
+        .Section-p--contacto{
+            width: 90%;
+            background-color: var(--color-principal-azul);
+            font-family: var(--font-textos);
+            padding: 2rem 3rem;
+            line-height: 1.875rem;
+            text-align: justify;
+        }
+
         
         /* KEY FRAMES */
 
@@ -587,6 +611,13 @@
             }
             .Imagen-grande{
                 width: 60%;
+            }
+
+            /* Grid Galería */
+
+            .Section-galeria{
+                grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
             }
 
             /* Marquesina Contacto */
