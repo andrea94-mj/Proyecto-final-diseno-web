@@ -485,7 +485,8 @@
         }
 
         .Formulario-contacto {
-            background-color: #000000;
+            background-color: #ffffff;
+            box-shadow: 1px 1px 4px #b6b6b6;
             padding: 1.25rem;
             border-radius: 8px;
             width: 100%;
