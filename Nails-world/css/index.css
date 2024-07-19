@@ -35,11 +35,11 @@
 
     :root {
     font-size: 100%;
-    --color-principal-azul: #5eb4b4;
+    --color-principal-azul: rgb(94, 180, 180);
     --font-titulos: "Ms Madi", cursive;
     --font-subtitulos: "Bebas Neue", sans-serif;
     --font-textos: "Montserrat", sans-serif;
-    --color-gris: #9d9d9d;
+    --color-gris: rgb(157, 157, 157);
     --sombra-textos: 1px 1px 4px #a4a4a4;
     }
         html {
