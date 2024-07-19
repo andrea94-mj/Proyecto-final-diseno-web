@@ -174,9 +174,8 @@
         text-shadow: 1px 1px 4px #878787;
         font-size: 5rem;
         position: absolute;
-        right: 1;
         bottom: 0;
-        opacity: 0; /* Estado inicial */
+        opacity: 0; 
         animation: aparecer 3s forwards;
     }
 
