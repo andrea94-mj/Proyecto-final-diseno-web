@@ -26,3 +26,5 @@ const parallax =  () => {
 window.addEventListener ('scroll', () =>{
     parallax()
 })
+
+
