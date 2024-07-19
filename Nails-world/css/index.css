@@ -144,6 +144,118 @@
         transform: scale(1.1);
     }
 
+    /* MAIN - PRINCIPAL */
+
+    .Main-inicio{
+        width: 80%;
+        max-width: 1400px;
+        margin: 0 auto 2rem;
+    }
+    .Main-wrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .Main-img{
+        width: 80%;
+        border-radius: 7%;
+    }
+    .Main-h1{
+        font-family: var(--font-titulos);
+        color: white;
+        text-shadow: 1px 1px 4px #878787;
+        font-size: 5rem;
+        position: absolute;
+        right: 1;
+        bottom: 0;
+        opacity: 0; /* Estado inicial */
+        animation: aparecer 3s forwards;
+    }
+
+    /* SECTION - INICIO - HISTORIA */
+
+    .Section-historia{
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+    .Section-h2--historia{
+        width: 70%;
+        font-size: 1.6em;
+        font-family: var(--font-textos);
+        color: var(--color-gris);
+        text-align: center;
+        text-align: justify;
+    }
+    .Section-h3--historia{
+        font-family: var(--font-titulos);
+        font-size: 4rem;
+
+    }
+    .Section-p--historia{
+        font-family: var(--font-textos);
+        width: 50%;
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 1.5rem;
+    }
+
+    .Section-grid--historia{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .Section-wrapper--historia{
+        width: 100%;
+        background-color: var(--color-gris);
+        object-fit: cover;
+        border-radius:7%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+    }
+    .Wrapper-img--historia{
+        width: 7rem;
+        border-radius: 50%;
+    }
+    .Wrapper-h3--historia{
+        font-family: var(--font-subtitulos);
+        font-size: 1.5em;
+    }
+    .Wrapper-p--historia{
+        font-family: var(--font-textos);
+        text-align: justify;
+        font-size: 1em;
+        line-height: 1.4rem;
+    }
+
+    /* SECTION - INICIO - CUIDADOS */
+
+    .Section-cuidados{
+        width: 90%;
+        max-width: 1400px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+    }
+    .Section-h3--cuidados{
+        font-family: var(--font-titulos);
+        font-size: 4rem;
+    }
+
     /* FOOTER COMÚN PARA TODAS LAS SECCIONES */
 
     .Footer{
@@ -538,6 +650,17 @@
         
         /* KEY FRAMES */
 
+
+        /* Key Frame para el texto de la imagen principal, con opacidad del 0% al 100% */
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
         /* Key Frame para la marquesina, hace que se desplace el texto */
         @keyframes slide{
             from{
@@ -673,21 +796,9 @@
             }
 
             /* Marquesina Contacto */
-            .Marquesina-caja{
-                width: 200%;
-                background-color: black;
-                display: grid;
-                grid-template-columns: repeat(8, 1fr);
-                align-content: center;
-                animation: slide 15s linear infinite;
-            }
+
             .Marquesina-texto{
-                font-family: var(--font-subtitulos);
-                color: white;
-                text-align: center;
                 font-size: 0.9em;
-                letter-spacing: 0.05em;
-                padding: 0.5rem 0;
             }
         }
 
