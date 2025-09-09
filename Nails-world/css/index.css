@@ -135,7 +135,7 @@
         flex-flow: row nowrap;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 6rem;
     }
     .Header-li{
         font-family: var(--font-subtitulos);
@@ -146,7 +146,6 @@
     }
     .Header-li:hover{
         color: var(--color-principal-azul) ;
-        transform: scale(1.1);
     }
 
     /* MAIN - PRINCIPAL - INICIO */
@@ -175,8 +174,6 @@
         font-size: 5rem;
         position: absolute;
         bottom: 0;
-        opacity: 0; 
-        animation: aparecer 3s forwards;
     }
 
     /* SECTION - INICIO - HISTORIA */

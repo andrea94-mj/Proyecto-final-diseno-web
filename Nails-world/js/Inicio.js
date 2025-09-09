@@ -12,7 +12,7 @@ headerBtn.addEventListener ('click', ()=>{
 
 // TABLA DE CONTENIDO CON BOTONES
 
-const tabla = document.querySelector('.Tabla');
+const tabla = document.querySelector('.Section-tabla'); 
 const tabsBtns = tabla.querySelectorAll('.Tabla-boton');
 const tabsPs = tabla.querySelectorAll('.Tabla-p');
 
